@@ -28,7 +28,7 @@ for (const link of links) {
 function clickHandler(e) {
   e.preventDefault();
   const href = this.getAttribute("href");
-  const offsetTop = document.querySelector(href).offsetTop;
+  const offsetTop = document.querySelector(href).offsetTop-70;
  
   scroll({
     top: offsetTop,
